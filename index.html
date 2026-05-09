@@ -2,8 +2,8 @@
 <html lang="ru">
 
 <head>
-  <meta name="description" content="Language school landing page with responsive layout and educational sections.">
-	<title>Britlex — language school landing</title>
+  <meta name="description" content="Britlex language school landing page with skills, pricing, contacts and responsive educational UI.">
+  <title>Britlex — Language School Landing</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -12,9 +12,16 @@
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="site-polish.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
 <body>
+  <div class="blx-bg-shapes" aria-hidden="true">
+    <span class="blx-shape blx-shape--one">A</span>
+    <span class="blx-shape blx-shape--two">?</span>
+    <span class="blx-shape blx-shape--three"></span>
+    <span class="blx-shape blx-shape--four">✓</span>
+  </div>
 	<!--  WRAPPER -->
 	<div class="wrapper">
 		<header data-scroll="120" data-scroll-show="600" class="header">
@@ -50,7 +57,7 @@
 			<!-- ScrollBtn - кнопка листающая навверх -->
 			<!-- <a id="back-to-top" class="isShowBtn"></a> -->
 
-			<div class="get-started">
+			<div class="get-started" id="home">
 				<div class="get-started__container grid-flex-end">
 					<div class="get-started__content">
 						<div class="get-started__block-text block-text">
@@ -79,7 +86,24 @@
 				</div>
 			</div>
 
-			<div class="skills">
+			
+                        <section class="blx-learning-path" id="learning-path">
+                                <div class="blx-learning-path__container">
+                                        <div class="blx-learning-path__head">
+                                                <span class="blx-kicker">Learning path</span>
+                                                <h2>From first lesson to confident speaking</h2>
+                                                <p>A small UX block that makes the landing feel more complete while keeping the original Britlex style.</p>
+                                        </div>
+                                        <div class="blx-steps">
+                                                <article><span>01</span><strong>Choose a skill</strong><p>Speaking, writing, reading or listening — start with the area you need most.</p></article>
+                                                <article><span>02</span><strong>Meet your teacher</strong><p>The teacher adjusts lessons to your level, goals and schedule.</p></article>
+                                                <article><span>03</span><strong>Practice weekly</strong><p>Simple regular practice helps language skills become natural.</p></article>
+                                        </div>
+                                </div>
+                        </section>
+
+
+                        <div class="skills" id="skills">
 				<div class="skills__container">
 
 					<div data-watch data-watch-threshold="0.5" data-watch-once class="skills__title title title-center">
@@ -194,7 +218,7 @@
 				</div>
 			</div>
 
-			<div class="about">
+			<div class="about" id="about">
 				<div class="about__container">
 					<div class="about__content">
 
@@ -254,7 +278,7 @@
 				</div>
 			</div>
 
-			<div class="price">
+			<div class="price" id="pricing">
 				<div class="price__container">
 					<div data-watch data-watch-threshold="0.5" data-watch-once class="price__title title title-center">
 						<h3>Pricing</h3>
@@ -350,7 +374,7 @@
 				</div>
 			</div>
 
-			<div class="contacts">
+			<div class="contacts" id="contacts">
 				<div class="contacts__container">
 					<div class="contacts__content">
 						<div class="contacts__row -row">
@@ -381,7 +405,7 @@
 										</div>
 
 										<div class="email-item__form">
-											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Enter Your E-mail" class="input">
+											<input autocomplete="off" type="email" name="email" data-error="Ошибка" placeholder="Enter Your E-mail" class="input">
 
 											<button type="submit" class="button button__contacts">Subscribe
 											</button>
@@ -437,6 +461,10 @@
 	</div>
 	<script src="js/app.min.js?_v=20230808180438"></script>
 
+
+  <a class="blx-sticky-cta" href="#contacts" aria-label="Contact Britlex">Start learning</a>
+
+  <script src="britlex-polish.js"></script>
 </body>
 
 
